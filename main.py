@@ -50,3 +50,11 @@ elif computers_choice == 1:
     print(paper)
 elif computers_choice == 2:
     print(scissors)
+
+#compare the choices to see who wins
+if (players_choice == '0' and computers_choice == 2) or (players_choice == '1' and computers_choice == 0) or (players_choice == '2' and computers_choice == 1):
+    print("You win!")
+elif int(players_choice) == computers_choice:
+    print("It's a draw")
+else:
+    print("You lose")
